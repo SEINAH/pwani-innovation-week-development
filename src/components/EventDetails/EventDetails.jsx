@@ -2,65 +2,107 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import './EventDetails.css';
 
+import event4 from '../../assets/images/event4.jpg';
+import event5 from '../../assets/images/event5.jpg';
+import event6 from '../../assets/images/event6.jpg';
+import event7 from '../../assets/images/event7.jpg';
+import event8 from '../../assets/images/event8.jpg';
+import event9 from '../../assets/images/event9.jpg';
+import event10 from '../../assets/images/event10.jpg';
+
 const EventDetails = () => {
-  const { year } = useParams();
-  const events = {
-    2023: {
-      description: "The Pwani Innovation Week (PIW) in 2023 took place at the Swahilipot Hub in Mombasa, Kenya. Swahilipot Hub, known for its vibrant atmosphere and commitment to nurturing local talent, provided the perfect venue for PIW, a celebration of innovation, youth empowerment, and international engagement. Throughout the event, Swahilipot Hub buzzed with activity as attendees participated in various workshops, panel discussions, and networking sessions. The hub's modern facilities, including co-working spaces and maker labs, offered an ideal environment for entrepreneurs and innovators to collaborate and exchange ideas. The PIW event at Swahilipot Hub showcased the creativity and ingenuity of the coastal region's youth, with pitch competitions, hackathons, and exhibitions highlighting innovative projects and startups. Moreover, Swahilipot Hub's central location in Mombasa made it easily accessible to participants from across the region, further enhancing the event's impact and reach.",
-      images: [
-        "/images/2023/event1.jpg",
-        "/images/2023/event2.jpg",
-        "/images/2023/event3.jpg",
-        "/images/2023/event4.jpg",
-        "/images/2023/event5.jpg",
-        "/images/2023/event6.jpg",
-        "/images/2023/event7.jpg",
-        "/images/2023/event8.jpg",
-        "/images/2023/event9.jpg",
-        "/images/2023/event10.jpg",
-        "/images/2023/event11.jpg",
-        "/images/2023/event12.jpg",
-        "/images/2023/event13.jpg",
-        "/images/2023/event14.jpg",
-        "/images/2023/event15.jpg",
-        "/images/2023/event16.jpg",
-        "/images/2023/event17.jpg",
-        "/images/2023/event18.jpg",
-        "/images/2023/event19.jpg",
-        "/images/2023/event20.jpg",
-        "/images/2023/event21.jpg"
-      ]
-    },
-    2022: {
-      description: "Pwani Innovation Week 2022 media launch of the 3rd Pwani Innovation week 2022. The launch will be officiated by ; Kenya National Chamber of Commerce, Department of Tade, Mombasa County and Swahilipot hub",
-      images: [
-        "/images/2022/event1.jpg",
-        "/images/2022/event2.jpg",
-        "/images/2022/event3.jpg",
-        "/images/2020/event4.jpg",
-        "/images/2020/event5.jpg",
-        "/images/2020/event6.jpg",
-      ]
-    },
-
-  };
-
-  const event = events[year];
-
-  if (!event) {
-    return <p>No event found for the year {year}</p>;
-  }
-
   return (
-    <div className="event-details-container">
-      <h2>Discover What Happened {year}</h2>
-      <p className="event-description">{event.description}</p>
-      <div className="image-gallery">
-        {event.images.map((image, index) => (
-          <img key={index} src={image} alt={`Event ${year} ${index + 1}`} className="gallery-image" />
-        ))}
+    <>
+      <div className="container">
+        <div className="banner-end">
+          <div className="row align-items-md-center">
+            <div className="col-md-6 order-md-2">
+              <div className="p-5 p-md-7">
+                {/* Heading */}
+                <div className="mb-7">
+                  <span className="text-cap">Discover our Past Events</span>
+                  <h3>
+                    Pwani Innovation Week 2023
+                  </h3>
+                  <p>
+                    Pwani Innovation Week 2023 is an annual event aimed at fostering innovation, entrepreneurship, and technological advancement in Kenya's coastal region.
+                  </p>
+                </div>
+                <p>
+                  Pwani innovation week Event serves as a platform to showcase the vibrant startup ecosystem, engage the community, and drive positive impact through technology and innovation.
+                </p>
+                <p>
+                  For more information, see the{" "}
+                  <a className="link" href="#">
+                    Past Events
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 content-space-md-1">
+              <div className="w-85 w-md-100 mx-auto me-md-auto">
+                <img
+                  className="img-fluid"
+                  src={event4}
+                  alt="Event 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="container-fluid">
+        <div className="row align-items-end gx-2 gx-lg-3 mb-2 mb-lg-3">
+          <div
+            className="col-3 d-none d-md-block"
+            style={{ marginBottom: "-5rem" }}
+          >
+            <img
+              className="img-fluid w-100"
+              src={event6}
+              alt="Event 6"
+            />
+          </div>
+          <div className="col-6 col-md-3">
+            <img
+              className="img-fluid w-100"
+              src={event7}
+              alt="Event 7"
+            />
+          </div>
+          <div className="col-6 col-md-3">
+            <img
+              className="img-fluid w-100"
+              src={event8}
+              alt="Event 8"
+            />
+          </div>
+          <div className="col-6 col-md-3">
+            <img
+              className="img-fluid w-100"
+              src={event9}
+              alt="Event 9"
+            />
+          </div>
+        </div>
+        <div className="row gx-2 gx-lg-3">
+          <div className="col-6 col-md-3 offset-md-3">
+            <img
+              className="img-fluid w-100"
+              src={event10}
+              alt="Event 10"
+            />
+          </div>
+          <div className="col-6 col-md-3">
+            <img
+              className="img-fluid w-100"
+              src={event5}
+              alt="Event 5"
+            />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

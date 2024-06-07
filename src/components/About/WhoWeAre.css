@@ -1,0 +1,119 @@
+/* Customize these styles according to your design */
+
+/* Heading styles */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .text-cap {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Info Block styles */
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .text-primary a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .text-primary a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image styles */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add border radius for rounded corners */
+  }
+  
+  /* Container styles */
+  .container {
+    margin-top: 50px; /* Adjust as needed */
+  }
+  
+  /* Column styles */
+  .col-md-6 {
+    padding: 0 15px;
+  }
+  
+  /* Content alignment */
+  .ps-md-5 {
+    text-align: justify; /* Adjust text alignment */
+  }
+  
+  /* Spacing between content */
+  .mb-7 {
+    margin-bottom: 30px; /* Adjust as needed */
+  }
+  
+  /* Adjust spacing between Info Blocks */
+  .d-flex:not(:last-child) {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+/* Customize these styles according to your design */
+
+/* Heading styles */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-cap {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Info Block styles */
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .text-primary a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .text-primary a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image styles */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add border radius for rounded corners */
+  }
+  
+  /* Container styles */
+  .container {
+    margin-top: 50px; /* Adjust as needed */
+  }
+  
+  /* Column styles */
+  .col-md-6 {
+    padding: 0 15px;
+  }
+  
+  /* Content alignment */
+  .ps-md-5 {
+    text-align: justify; /* Adjust text alignment */
+  }
+  
+  /* Spacing between content */
+  .mb-7 {
+    margin-bottom: 30px; /* Adjust as needed */
+  }
+  
+  /* Adjust spacing between Info Blocks */
+  .d-flex:not(:last-child) {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+    
